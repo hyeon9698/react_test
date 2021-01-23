@@ -47,10 +47,10 @@ class App extends Component {
                     >
                 </Subject>                
                 <TOC 
-                    onChangePage={function(){
+                    onChangePage={function(id){
                         this.setState({
                             mode:'read',
-                            selected_content_id:0
+                            selected_content_id:Number(id)
                         });
                     }.bind(this)} 
                     data={this.state.contents}
