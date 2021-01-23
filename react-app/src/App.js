@@ -20,6 +20,7 @@ class App extends Component {
         }
     }
     render(){
+        // react에서는 var 사용 안 하는게 좋다
         var _title, _desc = null;
         if(this.state.mode === 'welcome'){
             _title = this.state.welcome.title;
